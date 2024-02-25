@@ -1,0 +1,145 @@
+.body1 {
+    background-image: url('wallpaper.png');
+    background-size: 100% 300%;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: moveBackground 20s linear infinite;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+
+}
+@keyframes moveBackground {
+    0% { background-position: 0% 0%; } 
+    100% { background-position: 50% 50%; }
+}
+
+footer{
+    text-align: center;
+    padding: 1%;
+    margin-top: 5%;
+    color: black;
+    background-color: white;
+}
+                                 /*Home page styling*/
+.welcome{
+    font-size: 250%;
+    text-align: center;
+    padding-top: 15%;
+}
+.title {                    /*Home Page header styling*/
+    font-size: 350%;
+    font-weight: bold;
+    padding-bottom: 3%;
+    text-align: center;
+}
+
+.flex-container {         /*Links in the Home Page is stored in the flexbox*/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 1;
+
+}
+
+.link {                   /*Styling for links in the Home Page*/
+    padding: 2%;
+    margin: 1%;
+    font-size: 200%;
+    text-align: center;
+    flex-grow: 1;
+    font-weight: bold;
+    color: white;
+}
+.link:hover{
+    background-color: white;
+    color: black;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*main page styling*/
+.pages{
+    margin: 5%;
+    font-size: 150%;
+}
+
+/*styling for the links in other pages*/
+.page-link{
+    padding: 2%;
+    margin: 1%;
+    color: black;
+}
+.page-link:hover{
+    background-color: black;
+    color: #ffffff;
+}
+.nav-background{
+    background-color: white;
+    padding: 2%;
+    text-align: center;
+    margin: 2%;
+}
+h2 {
+    color: #ffffff;
+    font-size: 1.5em;
+}
+ 
+table {
+     border-collapse: collapse;
+     width: 100%;
+    }
+
+th, td {
+    border: 1px solid #ffffff;
+    padding: 8px;
+    text-align: left;
+    }
+
+th {
+    background-color: #000000;
+    }
+#AnimeLink{
+    color:white;
+    text-align: center;
+}
+#AvatarBunny{
+    text-align: center;
+}
+#Larp{
+    text-align: center;
+}
+#Airsoft{
+    text-align: center;
+}
+#DnD{
+    text-align: center;
+}
+.body2 {
+    background-color: #000000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    color: white;
+    border: 2px solid black; 
+    margin: 2em;
+    padding: 10;
+}
+.body2, html {
+    margin: 0;
+    padding: 0;
+}
+
+.outerborder{
+    background-image: url('wallpaper.png');
+    background-size: cover; 
+    padding: 20px; 
+}
+
+article {
+    background-color: rgba(0, 0, 0, 0.5); 
+    border: 2px solid black; 
+    padding: 20px; 
+    color: white; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Main Page</title>
+
+</head>
+    <body class="outerborder">
+        <div class="body2">
+            <header style="font-size: 250%;" align="center">Main Page</header>
+                <nav class="nav-background">
+                    <a class="page-link" href="Homepage.html">Home</a>
+                    <a class="page-link" href="About_Me.html">About Me</a>
+                    <a class="page-link" href="My_Dream.html">My Dream</a>
+                </nav>
+
+            <article>
+                <p align="center">Hey there, I'm Gianni Miller, and I'm thrilled to welcome you to my webpage! This space is where I get to share my passions, adventures, and everything in between with you.</p>
+                <p>At the top of the page you'll find the links to other pages. The first one, labeled "About Me," is your gateway to getting to know me a little better.
+                As you click on the "About Me" button, you'll dive into a world where I share more about who I am beyond just a name. Here, I'll reveal my likes, dislikes, and the things that make me tick.</p>
+                <p>The second one, aptly named "My Dream," offers a glimpse into my aspirations and the path I envision for my future.
+                As you embark on this journey through my dreams, you'll discover a tapestry of ambitions, hopes, and aspirations that shape my vision for tomorrow. From professional goals to personal aspirations, I'll lay bare the dreams that inspire me to push boundaries and strive for greatness.</p>
+                <p>Also Scroll Down to give me your feedback(It's Anonymous)</p>
+            </article>
+
+            <div>
+                <img src="vrQaS3IH_400x400.jpg" alt="images2">
+                <img src="a21b582bd6878163c25deffda7c990c7.png" alt="images3" width="400" height="400">
+                <img src="623909fa0d26ab088c4f881e_Donna.png" alt="images5" width="400" height="400">
+            </div>
+
+            <div align="center">
+                <h2>Feedback Form</h2>
+                <form id="feedbackForm">
+                    <P>It's still a work of progress</P>
+                    <label for="feedback">Your Feedback:</label><br>
+                    <textarea id="feedback" name="feedback" rows="4" required></textarea><br>
+                    <button type="submit">Submit Feedback</button>
+                </form>
+            </div>
+        
+            <div align="center">
+                <h2>Recent Feedback</h2>
+                    <ul id="feedbackList"></ul>
+                <script>
+                    document.getElementById('feedbackForm').addEventListener('submit', function(event) {
+                        event.preventDefault(); 
+            
+                        var feedback = document.getElementById('feedback').value;
+
+                        var feedbackItem = document.createElement('li');
+                        feedbackItem.textContent = feedback;
+                        document.getElementById('feedbackList').appendChild(feedbackItem);
+
+                        document.getElementById('feedbackForm').reset();});
+                </script>
+            </div>
+        <footer>
+            <h2 style="color:black;">Contact Me</h2>
+            <p>Any question Email me at <a href="gianniwmiller@gmail.com">gianniwmiller@gmail.com</a></p>
+        </footer>
+        </div>
+    </body>
+</html>
